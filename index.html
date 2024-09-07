@@ -2,239 +2,519 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mediaqueries.css">
+    <!--=============== LINE ICONS ===============-->
+    <link rel="stylesheet" href="https://cdn.lineicons.com/4.0/lineicons.css">
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>Minh Hung's Portfolio</title>
 </head>
 <body>
-    <nav id="desktop-nav">
-        <div class="logo">Nguyễn Minh Hùng</div>
-        <div>
-            <ul class="nav-links">
-                <li><a href="#about">Về mình</a></li>
-                <li><a href="#experience">Kinh nghiệm</a></li>
-                <li><a href="#project">Dự án</a></li>
-                <li><a href="#contact">Liên lạc</a></li>
-            </ul>
-        </div>
-    </nav>
-    <nav id="hamburger-nav">
-        <div class="logo">Nguyễn Minh Hùng</div>
-        <div class="hamburger-menu">
-            <div class="hamburger-icon" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="menu-links">
-                <li><a href="#about" onclick="toggleMenu()">Về mình</a></li>
-                <li><a href="#experience" onclick="toggleMenu()">Kinh nghiệm</a></li>
-                <li><a href="#project" onclick="toggleMenu()">Dự án</a></li>
-                <li><a href="#contact" onclick="toggleMenu()">Liên lạc</a></li>
-            </div>
-        </div>
-    </nav>
-    <section id="profile">
-        <div class="section__pic-container">
-            <img src="./assets/profile-pic.png" alt="My profile picture">
-        </div>
-        <div class="section__text">
-            <p class="section__text__p1">Xin chào, mình là</p>
-            <h1 class="title">Nguyễn Minh Hùng</h1>
-            <p class="section__text__p2">MSSV: 2311560406</p>
-            <div class="btn-container">
-                <button class="btn btn-color-2" onclick="window.open('./assets/my-resume-2024.pdf')">Tải CV</button>
-                <button class="btn btn-color-1" onclick="location.href='#contact'">Liên lạc</button>
-            </div>
-            <div id="socials-container">
-                <img src="./assets/linkedin.png" alt="Linkedin account" class="icon" onclick="location.href='https://www.linkedin.com/in/minhung'">
-                <img src="./assets/github.png" alt="Github account" class="icon" onclick="location.href='https://github.com/holdennguyen'">
-            </div>
-        </div>
-    </section>
-    <section id="about">
-        <p class="section__text__p1">Tìm hiểu thêm</p>
-        <h1 class="title">Về mình</h1>
-        <div class="section-container">
-            <div class="section__pic-container">
-                <img src="./assets/about-pic.png" alt="Profile picture" class="about-pic">
-            </div>
-            <div class="about-details-container">
-                <div class="about-containers">
-                    <div class="details-container">
-                        <img src="./assets/experience.png" alt="Experience icon" class="icon">
-                        <h3>Kinh nghiệm</h3>
-                        <p>5+ years <br/> Operation Engineer</p>
-                    </div>
-                    <div class="details-container">
-                        <img src="./assets/education.png" alt="Education icon" class="icon">
-                        <h3>Học vấn</h3>
-                        <p>Tốt nghiệp Cao Đẳng <br/> Sinh viên năm nhất Đại học </p>
-                    </div>
-                </div>
-                <div class="text-container">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa odio doloribus eligendi neque optio nisi accusantium deserunt error, dicta fugiat. Fugit ea dicta officiis, aperiam est animi ut id beatae!</p>
-                </div>
-            </div>
-        </div>
-        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'">
-    </section>
-    <section id="experience">
-        <p class="section__text__p1">Khám phá</p>
-        <h1 class="title">Kinh nghiệm</h1>
-        <div class="experience-details-container">
-            <div class="about-containers">
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Frontend Development</h2>
-                    <div class="article-container">
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
-                            <div>
-                                <h3>HTML</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
-                            <div>
-                                <h3>CSS</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
-                            <div>
-                                <h3>SASS</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
-                            <div>
-                                <h3>JavaScript</h3>
-                                <p>Basic</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
-                            <div>
-                                <h3>TypeScript</h3>
-                                <p>Basic</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
-                            <div>
-                                <h3>Material UI</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Backend Development</h2>
-                    <div class="article-container">
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
-                            <div>
-                                <h3>PostgreSQL</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
-                            <div>
-                                <h3>Node JS</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
-                            <div>
-                                <h3>Express JS</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
-                            <div>
-                                <h3>Git</h3>
-                                <p>Basic</p>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'">
-    </section>
-    <section id="projects">
-        <p class="section__text__p1">Browse my recent</p>
-        <h1 class="title">Projects</h1>
-        <div class="experience-details-container">
-            <div class="about-containers">
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img src="./assets/project-1.png" alt="Project 1" class="project-img">
-                    </div>
-                    <h2 class="experience-sub-title project-title">Project One</h2>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick="location.href=''">Github</button>
-                        <button class="btn btn-color-2 project-btn" onclick="location.href=''">Live Demo</button>
-                    </div>
-                </div>
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img src="./assets/project-2.png" alt="Project 2" class="project-img">
-                    </div>
-                    <h2 class="experience-sub-title project-title">Project Two</h2>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick="location.href=''">Github</button>
-                        <button class="btn btn-color-2 project-btn" onclick="location.href=''">Live Demo</button>
-                    </div>
-                </div>
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img src="./assets/project-3.png" alt="Project 3" class="project-img">
-                    </div>
-                    <h2 class="experience-sub-title project-title">Project Three</h2>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick="location.href=''">Github</button>
-                        <button class="btn btn-color-2 project-btn" onclick="location.href=''">Live Demo</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'">
-    </section>
-    <section id="contact">
-        <p class="section__text__p1">Get in Touch</p>
-        <h1 class="title">Contact Me</h1>
-        <div class="contact-info-upper-container">
-            <div class="contact-info-container">
-                <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon">
-                <p><a href="mailto:holdennguyen6174@gmail.com">holdennguyen6174@gmail.com</a></p>
-            </div>
-            <div class="contact-info-container">
-                <img src="./assets/linkedin.png" alt="Linkedin icon" class="icon contact-icon">
-                <p><a href="https://www.linkedin.com/in/minhung">Linkedin</a></p>
-            </div>
-        </div>
-    </section>
-    <footer>
-        <nav>
-            <div class="nav-links-container">
-                <ul class="nav-links">
-                    <li><a href="#about">Về mình</a></li>
-                    <li><a href="#experience">Kinh nghiệm</a></li>
-                    <li><a href="#project">Dự án</a></li>
-                    <li><a href="#contact">Liên lạc</a></li>
+    <!--=============== HEADER ===============-->
+    <header class="header" id="header">
+        <!-- nav -->
+        <nav class="nav container padd-15">
+            <!-- nav menu -->
+            <div class="nav-menu" id="nav-menu">
+                <!-- nav list -->
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link active-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#service" class="nav-link">Skill</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#experience" class="nav-link">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#project" class="nav-link">Project</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#notes" class="nav-link">Note</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#video" class="nav-link">Video</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
                 </ul>
+                <!-- nav close -->
+                <div class="nav-close" id="nav-close">
+                    <i class="lni lni-close"></i>
+                </div>
+            </div>
+            <!-- nav btn -->
+            <div class="nav-btns">
+                <!-- toggle btn -->
+                <div class="nav-toggle" id="nav-toggle">
+                    <i class="lni lni-menu"></i>
+                </div>
             </div>
         </nav>
-        <p>Copyright &#169; 2024 Nguyen Minh Hung. All Rights Reserved.</p>
-    </footer>
-    <script src="script.js"></script>
+    </header>
+
+    <!--=============== MAIN ===============-->
+    <main class="main-content">
+        <!--=============== HOME ===============-->
+        <section class="home" id="home">
+            <div class="container">
+                <!-- intro -->
+                <div class="intro">
+                    <!-- avatar image -->
+                    <img src="assets/img/avatar-1.svg" alt="Minh Hung">
+                    <!-- info -->
+                    <h1>Nguyen Minh Hung</h1>
+                    <span>MSSV <span class="info-text">2311560406</span></span>
+                    <!-- social icons -->
+                    <ul class="social-icons">
+                        <li><a href="https://www.linkedin.com/in/minhung/"><i class="lni lni-linkedin-original"></i></a></li>
+                        <li><a href="https://github.com/holdennguyen"><i class="lni lni-github-original"></i></a></li>
+                        <li><a href="https://www.youtube.com/@__minhung__"><i class="lni lni-youtube"></i></a></li>
+                    </ul>
+                    <!-- button -->
+                    <div>
+                        <a href="#contact" class="btn btn-default">Leave a message</a>
+                    </div>
+                    <!-- scroll down mouse wheel -->
+                    <div class="scroll-down">
+                        <div class="mouse-wrapper">
+                            <span>Scroll Down</span>
+                            <span class="mouse">
+                                <span class="wheel"></span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--=============== About ===============-->
+        <section class="about section" id="about">
+            <div class="container">
+                <!-- section title -->
+                <h2 class="section-title padd-15">About Me</h2>
+                <div class="row">
+                    <div class="about-img padd-15">
+                        <!-- avatar img -->
+                        <img src="assets/img/avatar-2.svg" alt="">
+                    </div>
+                    <div class="about-content padd-15">
+                        <div class="rounded">
+                            <div class="row">
+                                <div class="about-text padd-15">
+                                    <!-- about text -->
+                                    <p>I am Nguyen Minh Hung (Holden), a 30-year-old student from K23, Faculty of Information Technology NTTU. My goal is to earn a formal university degree to open up further opportunities, pursuing a PhD in Cybersecurity or Quantum Computing in Europe.</p>
+                                    <div>
+                                        <a href="./assets/nguyen-minh-hung-resume.pdf" target="_blank" class="btn btn-default">Download CV</a>
+                                    </div>
+                                </div>
+                                <div class="skills padd-15">
+                                    <div class="row">
+                                        <!-- skill item -->
+                                        <div class="skill-item">
+                                            <h4>Engineering</h4>
+                                            <div class="progress">
+                                                <div class="progress-in" style="width: 95%; background: rgb(255,209,92);"></div>
+                                                <div class="skill-percent">95%</div>
+                                            </div>
+                                        </div>
+                                        <!-- skill item -->
+                                        <div class="skill-item">
+                                            <h4>Software Development</h4>
+                                            <div class="progress">
+                                                <div class="progress-in" style="width: 75%; background: rgb(255,76,96);"></div>
+                                                <div class="skill-percent">75%</div>
+                                            </div>
+                                        </div>
+                                        <!-- skill item -->
+                                        <div class="skill-item">
+                                            <h4>DevOps</h4>
+                                            <div class="progress">
+                                                <div class="progress-in" style="width: 85%; background: rgb(108,108,229);"></div>
+                                                <div class="skill-percent">85%</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- fact item -->
+                    <div class="fact-item padd-15">
+                        <i class="lni lni-laptop"></i>
+                        <div class="details">
+                            <h3>150+</h3>
+                            <p>Online courses done</p>
+                        </div>
+                    </div>
+                    <!-- fact item -->
+                    <div class="fact-item padd-15">
+                        <i class="lni lni-coffee-cup"></i>
+                        <div class="details">
+                            <h3>6174</h3>
+                            <p>Cup of coffee</p>
+                        </div>
+                    </div>
+                    <!-- fact item -->
+                    <div class="fact-item padd-15">
+                        <i class="lni lni-users"></i>
+                        <div class="details">
+                            <h3>200+</h3>
+                            <p>Professional connections</p>
+                        </div>
+                    </div>
+                    <!-- fact item -->
+                    <div class="fact-item padd-15">
+                        <i class="lni lni-cup"></i>
+                        <div class="details">
+                            <h3>6</h3>
+                            <p>Honors & awards</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--=============== Services ===============-->
+        <section class="services section" id="service">
+            <div class="container">
+                <!-- section title -->
+                <h2 class="section-title padd-15">Skills</h2>
+                <div class="row">
+                    <!-- service item -->
+                    <div class="service-item padd-15">
+                        <div class="service-item-inner" style="background: rgb(249,215,76);">
+                            <img src="assets/img/service-1.svg" alt="">
+                            <h3>Engineering</h3>
+                            <p>I am a detail-oriented engineer passionate about problem-solving, with a proven track record of developing innovative solutions through a methodical analytical approach.</p>
+                        </div>
+                    </div>
+                    <!-- service item -->
+                    <div class="service-item padd-15">
+                        <div class="service-item-inner" style="background: rgb(249,123,139);">
+                            <img src="assets/img/service-2.svg" alt="">
+                            <h3>Software Development</h3>
+                            <p>I am a self-taught software developer skilled in various languages, focused on building scalable applications and delivering high-quality solutions</p>
+                        </div>
+                    </div>
+                    <!-- service item -->
+                    <div class="service-item padd-15">
+                        <div class="service-item-inner" style="background: rgb(108,108,229);">
+                            <img src="assets/img/service-3.svg" alt="">
+                            <h3>DevOps</h3>
+                            <p>I have DevOps skills in automation and continuous integration, with experience in cloud platforms to optimize performance and streamline deployments.
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--=============== Experience ===============-->
+        <section class="section" id="experience">
+            <div class="container">
+                <!-- section title -->
+                <h2 class="section-title padd-15">Experience</h2>
+                <div class="row">
+                    <!-- education -->
+                    <div class="education padd-15">
+                        <div class="row">
+                            <div class="timeline-box">
+                                <div class="timeline">
+                                    <!-- timeline item -->
+                                    <div class="timeline-item">
+                                        <i class="lni lni-graduation timeline-icon"></i>
+                                        <h3 class="timeline-date">
+                                            <i class="lni lni-calendar"></i> 2023 - present
+                                        </h3>
+                                        <h3 class="timeline-title">Bachelor's Degree</h3>
+                                        <p class="timeline-text">Nguyen Tat Thanh University - Faculty in Information Technology</p>
+                                    </div>
+                                     <!-- timeline item -->
+                                     <div class="timeline-item">
+                                        <i class="lni lni-graduation timeline-icon"></i>
+                                        <h3 class="timeline-date">
+                                            <i class="lni lni-calendar"></i> 2013 - 2016
+                                        </h3>
+                                        <h3 class="timeline-title">College Degree</h3>
+                                        <p class="timeline-text">Petrovietnam Manpower Training College - Mechanical Systems</p>
+                                    </div>
+                                     <!-- timeline item -->
+                                     <div class="timeline-item">
+                                        <i class="lni lni-graduation timeline-icon"></i>
+                                        <h3 class="timeline-date">
+                                            <i class="lni lni-calendar"></i> 2010 - 2013
+                                        </h3>
+                                        <h3 class="timeline-title">High School Diploma</h3>
+                                        <p class="timeline-text">Hung Vuong High School for The Gifted - Mathematics</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- experience -->
+                    <div class="experience padd-15">
+                        <div class="row">
+                            <div class="timeline-box">
+                                <div class="timeline">
+                                    <!-- timeline item -->
+                                    <div class="timeline-item">
+                                        <i class="lni lni-briefcase timeline-icon"></i>
+                                        <h3 class="timeline-date">
+                                            <i class="lni lni-calendar"></i> 2023 - present
+                                        </h3>
+                                        <h3 class="timeline-title">Site Reliability Engineer</h3>
+                                        <p class="timeline-text">OPSWAT - Software company</p>
+                                        <br>
+                                    </div>
+                                     <!-- timeline item -->
+                                     <div class="timeline-item">
+                                        <i class="lni lni-briefcase timeline-icon"></i>
+                                        <h3 class="timeline-date">
+                                            <i class="lni lni-calendar"></i> 2020 - 2023
+                                        </h3>
+                                        <h3 class="timeline-title">Operation Engineer</h3>
+                                        <p class="timeline-text">Intel - Technology corporation</p>
+                                        <br>
+                                    </div>
+                                     <!-- timeline item -->
+                                     <div class="timeline-item">
+                                        <i class="lni lni-briefcase timeline-icon"></i>
+                                        <h3 class="timeline-date">
+                                            <i class="lni lni-calendar"></i> 2017 - 2020
+                                        </h3>
+                                        <h3 class="timeline-title">Technician Specialist</h3>
+                                        <p class="timeline-text">Intel - Technology corporation</p>
+                                        <br>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--=============== Project ===============-->
+        <section class="project section" id="project">
+            <div class="container">
+                <!-- section title -->
+                <h2 class="section-title padd-15">Personal Projects</h2>
+                <div class="row">
+                    <!-- project item -->
+                    <a href="https://github.com/holdennguyen/jenkins-setup-aws" target="_blank" class="project-item padd-15">
+                        <div class="project-item-inner">
+                            <div class="project-item-thumbnail">
+                                <img src="assets/img/jenkins.png" alt="">
+                                <div class="mask"></div>
+                            </div>
+                            <h3 class="project-item-title">Jenkins Setup Using AWS Autoscaling Group, <br/> Load Balancer & EFS</h3>
+                            <span class="more-button">&hellip;</span>
+                        </div>
+                    </a>
+                     <!-- project item -->
+                     <a href="https://github.com/holdennguyen/cicd-pipeline-java-webapp" target="_blank" class="project-item padd-15">
+                        <div class="project-item-inner">
+                            <div class="project-item-thumbnail">
+                                <img src="assets/img/java.png" alt="">
+                                <div class="mask"></div>
+                            </div>
+                            <h3 class="project-item-title">CI/CD Pipeline for Java Webapp</h3>
+                            <span class="more-button">&hellip;</span>
+                        </div>
+                    </a>
+                     <!-- project item -->
+                     <a href="https://github.com/holdennguyen/kasm-workspaces-single-server" target="_blank" class="project-item padd-15">
+                        <div class="project-item-inner">
+                            <div class="project-item-thumbnail">
+                                <img src="assets/img/kasm-workspaces.png" alt="">
+                                <div class="mask"></div>
+                            </div>
+                            <h3 class="project-item-title">Sandbox environment <br/> with Kasm workspaces</h3>
+                            <span class="more-button">&hellip;</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!--=============== Notes ===============-->
+        <section class="section" id="notes">
+            <div class="container">
+                <!-- section title -->
+                <h2 class="section-title padd-15">Latest Notes</h2>
+                <div class="row">
+                    <!-- blog item -->
+                    <div class="blog-item padd-15">
+                        <div class="inner">
+                            <div class="thumb">
+                                <a target="_blank" href="https://minhung.gumroad.com/l/networking-essentials-cisco"><img src="assets/img/note-1.png" alt=""></a>
+                            </div>
+                            <div class="details">
+                                <h3 class="title"><a target="_blank" href="https://minhung.gumroad.com/l/networking-essentials-cisco">Networking Essentials - Cisco</a></h3>
+                                <ul class="meta">
+                                    <li>101 pages</li>
+                                    <li>162 downloads</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- blog item -->
+                    <div class="blog-item padd-15">
+                        <div class="inner">
+                            <div class="thumb">
+                                <a target="_blank" href="https://minhung.gumroad.com/l/linux-fundamentals"><img src="assets/img/note-2.png" alt=""></a>
+                            </div>
+                            <div class="details">
+                                <h3 class="title"><a target="_blank" href="https://minhung.gumroad.com/l/linux-fundamentals">Linux Fundamentals - HTB</a></h3>
+                                <ul class="meta">
+                                    <li>121 pages</li>
+                                    <li>115 downloads</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- blog item -->
+                    <div class="blog-item padd-15">
+                        <div class="inner">
+                            <div class="thumb">
+                                <a target="_blank" href="https://minhung.gumroad.com/l/learn-git-and-github"><img src="assets/img/note-3.png" alt=""></a>
+                            </div>
+                            <div class="details">
+                                <h3 class="title"><a target="_blank" href="https://minhung.gumroad.com/l/learn-git-and-github">Learn Git & GitHub - Codecademy</a></h3>
+                                <ul class="meta">
+                                    <li>101 pages</li>
+                                    <li>249 downloads</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--=============== Testimonial ===============-->
+        <section class="section" id="video">
+            <div class="container">
+                <!-- section title -->
+                <h2 class="section-title padd-15">My Videos</h2>
+                <!-- testimonial wrapper -->
+                <div class="swiper testimonial-wrapper">
+                    <div class="swiper-wrapper">
+                        <!-- testimonial item -->
+                        <div class="testimonial-item swiper-slide">
+                            <div class="media-item">
+                                <div class="iframe-container">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/zClBmkVESnI?si=uULXp5qE3ikaRlIU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                            <h3>What is GitHub? The Social Network for Programmers</h3>
+                            <span class="subtitle">7,715 views  Premiered Dec 11, 2021</span>
+                            <div class="comment">🌟 Đây là video giới thiệu về trang github.com, nó được coi như một mạng xã hội dành riêng cho các lập trình viên chia sẻ và phát triển dự án của họ cùng với nhau!</div>
+                        </div>
+                        <!-- testimonial item -->
+                        <div class="testimonial-item swiper-slide">
+                            <div class="media-item">
+                                <div class="iframe-container">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/7eotChZ5EP8?si=1n1C3ovNoeda1sHS" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                            <h3>You Should Know This Method for Using Gmail</h3>
+                            <span class="subtitle">159 views  Premiered Sep 9, 2022</span>
+                            <div class="comment">🌟 Khái niệm Inbox Zero được giới thiệu vào năm 2006 bởi Merlin Mann, là một trong những nền tảng văn hóa cho kỹ thuật xử lý email hiệu quả. Trong video này mình sẽ chia sẻ cách áp dụng phương pháp đó đối với tài khoản Gmail của mình. 🔥</div>
+                        </div>
+                        <!-- testimonial item -->
+                        <div class="testimonial-item swiper-slide">
+                            <div class="media-item">
+                                <div class="iframe-container">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/AiHCvUNO9ng?si=18T2ytYxK_k-y2De" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                            <h3>Reddit? - The Frontpage of Internet</h3>
+                            <span class="subtitle">5,718 views  Jun 17, 2019</span>
+                            <div class="comment">🔥 Đây là video giới thiệu về trang reddit.com, nó được coi như đầu tàu của internet, nơi các liên kết được chia sẻ và thảo luận. Mình muốn giới thiệu cho các bạn đôi chút về website này, hãy tạo ngay tài khoản và hóng hớt chuyện thế giới thôi nào!</div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+        <!--=============== Contact ===============-->
+        <section class="contact section" id="contact">
+            <div class="container">
+                <!-- section title -->
+                <h2 class="section-title padd-15">Contact us</h2>
+                <div class="row">
+                    <!-- contact box -->
+                    <div class="contact-box padd-15">
+                        <div class="contact-data">
+                            <!-- contact information -->
+                            <div class="contact-information">
+                                <h3 class="contact-subtitle">Call me for instant response</h3>
+                                <span class="contact-description">
+                                    <i class="lni lni-phone contact-icon"></i>
+                                    +84 912 941 050
+                                </span>
+                            </div>
+                             <!-- contact information -->
+                             <div class="contact-information">
+                                <h3 class="contact-subtitle">Write me by mail</h3>
+                                <span class="contact-description">
+                                    <i class="lni lni-user contact-icon"></i>
+                                    holdennguyen6174@gmail.com
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- contact form -->
+                    <form action="" class="contact-form padd-15" id="emailForm">
+                        <div class="contact-inputs">
+                            <!-- contact content -->
+                            <div class="contact-content">
+                                <input type="email" class="contact-input" id="email">
+                                <label for="" class="contact-label">Email</label>
+                                <span></span>
+                            </div>
+                            <!-- contact content -->
+                            <div class="contact-content">
+                                <input type="text" class="contact-input" id="subject">
+                                <label for="" class="contact-label">Subject</label>
+                                <span></span>
+                            </div>
+                            <!-- contact content -->
+                            <div class="contact-content contact-area">
+                                <textarea name="" id="message" cols="30" rows="10" class="contact-input"></textarea>
+                                <label for="" class="contact-label">Message</label>
+                                <span></span>
+                            </div>
+                        </div>
+                        <a href="mailto:holdennguyen6174@gmail.com" class="btn btn-default">Send Message</a>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!--=============== Footer ===============-->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-text padd-15">
+                    <p>&copy; Nguyen Minh Hung - 2311560406 - 23DTH.CL.1A</p>
+                </div>
+            </div>
+        </footer>
+    </main>
+    <!--=============== SWIPER JS ===============-->
+    <!-- <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!--=============== JS ===============-->
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
