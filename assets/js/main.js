@@ -31,7 +31,7 @@ function linkAction()
 }
 navLinks.forEach(n => n.addEventListener('click', linkAction))
 
-/*=============== TESTIMONIAL SWIPER ===============*/
+/*=============== VIDEO SWIPER ===============*/
 var swiper = new Swiper(".testimonial-wrapper", {
     spaceBetween: 30,
     loop: 'true',
@@ -59,8 +59,7 @@ function navHighlighter()
     const sectionHeight = current.offsetHeight;
     const sectionTop = current.offsetTop - 58,
     sectionId = current.getAttribute("id");
-    /* - If our current scroll position enters the space where current section on screen is, add .active class to corresponding navigation link, else remove it
-    - To know which link needs an active class, we use sectionId variable we are getting while looping through sections as an selector */
+
     if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight)
     {
       document.querySelector('.nav-menu a[href*=' + sectionId + ']').classList.add("active-link")
